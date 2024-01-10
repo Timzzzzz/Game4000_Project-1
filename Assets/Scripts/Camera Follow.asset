@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Camera Follow
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":-1.936127},"zoom":1.0,"elements":[{"coroutine":true,"defaultValues":{},"position":{"x":-370.0,"y":-127.0},"guid":"0e01c475-608a-4e09-9ed5-a35fc67cb792","$version":"A","$type":"Unity.VisualScripting.LateUpdate","$id":"9"},{"chainable":false,"member":{"name":"Follow","parameterTypes":null,"targetType":"Cinemachine.CinemachineVirtualCamera","targetTypeName":"Cinemachine.CinemachineVirtualCamera","$version":"A"},"defaultValues":{"target":null,"input":null},"position":{"x":38.0,"y":-57.0},"guid":"63b1df80-92bd-4cfa-8db4-24711c6d2b6c","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"11"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"Player","$type":"System.String"}},"position":{"x":-159.0,"y":39.0},"guid":"34b84f26-7a38-4765-adfd-b810fb2f5034","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"14"},{"defaultValues":{"seconds":{"$content":0.05,"$type":"System.Single"},"unscaledTime":{"$content":true,"$type":"System.Boolean"}},"position":{"x":-176.0,"y":-117.0},"guid":"9aa25359-0bf3-4054-8c76-1efb893b0ec7","$version":"A","$type":"Unity.VisualScripting.WaitForSecondsUnit","$id":"16"},{"sourceUnit":{"$ref":"16"},"sourceKey":"exit","destinationUnit":{"$ref":"11"},"destinationKey":"assign","guid":"4fa222d9-9697-4189-b7a4-156eb6c39460","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"4a768fee-5910-4ffb-927b-e540b444f2f1","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"input","guid":"e99f7c97-01b8-45b3-8389-5d26d7927b3f","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
